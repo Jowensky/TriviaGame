@@ -24,7 +24,7 @@ $('input[type=submit]').on('click', function (e) {
             correct++;
         }
     }
-
+    $('#container').empty();
     $('header').append(correct)
 });
 
