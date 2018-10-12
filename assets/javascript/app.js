@@ -4,8 +4,9 @@ var Answers = ['a', 'b', 'c', 'd', 'd', 'b', 'b', 'd', 'b', 'c']
 
 
 
-$('input[type=submit]').click(function (e) {
+$('input[type=submit]').click(function (e, run) {
 
+    // setTimeout(run, 3000)
     e.preventDefault()
 
     var urChoice = [
@@ -29,6 +30,8 @@ $('input[type=submit]').click(function (e) {
     $('#container').empty();
     $('header').append(correct)
     $('#reload').show()
+
+    
 })
 
 $('#reload').on('click', function () {

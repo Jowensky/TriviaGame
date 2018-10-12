@@ -2,10 +2,22 @@
     display: none;
 }
 
-header{
-    margin: 0 auto;
+header {
+    font-family: Lora, serif;
+    font-size: 100px;
+    float: right;
+    animation: yourAnimation 10s forwards 0s ease;
 }
 
+@keyframes yourAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(xx);
+        opacity: 1;
+    }
+}
 
 body {
     background-image: url(../images/micro.png);
@@ -24,4 +36,23 @@ form[name=quiz] > h3 {
 
 form[name=quiz] > input {
     padding: 8px;
+}
+
+input[type=submit] {
+    background-color: rgb(14, 13, 13, .75);
+    color: rgb(112, 112, 16, .3);
+    border: none;
+    border-radius: 20px;
+    width: 85px;
+    margin-left: 50%;
+}
+
+#reload {
+    background-color: rgb(14, 13, 13, .75);
+    color: rgb(112, 112, 16, .3);
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 15px;
+    margin-left: 50%;
 }
