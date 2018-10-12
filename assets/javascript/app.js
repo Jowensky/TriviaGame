@@ -26,5 +26,9 @@ $('input[type=submit]').on('click', function (e) {
     }
     $('#container').empty();
     $('header').append(correct)
-});
+    $('#reload').show()
+})
 
+$('#reload').on('click', function () {
+    location.reload();
+})

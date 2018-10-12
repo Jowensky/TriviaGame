@@ -1,3 +1,30 @@
-input[type=submit] {
-    margin: 5px;
+#reload {
+    display: none;
+}
+
+header{
+    margin: 0 auto;
+}
+
+
+body {
+    background-image: url(../images/micro.png);
+    background-size: cover;
+    color: white;
+    font-family: lora, sans-serif;
+    margin: 20px;
+}
+
+form[name=quiz] > h3 {
+    /* background: bluevioet; */
+    margin-top: 20px;
+    padding-bottom: 8px;
+    color: grey;
+    background-color: rgba(241, 179, 21, 0.596);
+    height: 18px;
+    width: 20%;
+}
+
+form[name=quiz] > input {
+    padding: 8px;
 }
