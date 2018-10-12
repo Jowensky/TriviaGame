@@ -2,7 +2,9 @@ var correct = 0;
 var outOf = 10;
 var Answers = ['a', 'b', 'c', 'd', 'd', 'b', 'b', 'd', 'b', 'c']
 
-$('input[type=submit]').on('click', function (e) {
+
+
+$('input[type=submit]').click(function (e) {
 
     e.preventDefault()
 

@@ -16,13 +16,10 @@ body {
 }
 
 form[name=quiz] > h3 {
-    /* background: bluevioet; */
     margin-top: 20px;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     color: grey;
-    background-color: rgba(241, 179, 21, 0.596);
     height: 18px;
-    width: 20%;
 }
 
 form[name=quiz] > input {
