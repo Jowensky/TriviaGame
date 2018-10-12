@@ -56,3 +56,10 @@ input[type=submit] {
     font-size: 15px;
     margin-left: 50%;
 }
+
+#yougot {
+    position: absolute;
+    margin-left: 50%;
+    bottom: 50%;
+    font-size: 40px;
+}

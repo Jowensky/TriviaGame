@@ -28,7 +28,8 @@ $('input[type=submit]').click(function (e, run) {
         }
     }
     $('#container').empty();
-    $('header').append(correct)
+    $('header').empty();
+    $('#yougot').append(correct)
     $('#reload').show()
 
     
