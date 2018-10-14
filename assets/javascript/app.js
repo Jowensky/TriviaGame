@@ -1,14 +1,11 @@
 var correct = 0;
 var outOf = 10;
+var time = 30
 var Answers = ['a', 'b', 'c', 'd', 'd', 'b', 'b', 'd', 'b', 'c']
 
+var intervalId;
 
-
-$('input[type=submit]').click(function (e, run) {
-
-    // setTimeout(run, 3000)
-    e.preventDefault()
-
+function grabScore() {
     var urChoice = [
         $('input[name=Question1]:checked').val(),
         $('input[name=Question2]:checked').val(),
@@ -31,10 +28,26 @@ $('input[type=submit]').click(function (e, run) {
     $('header').empty();
     $('#yougot').append(correct)
     $('#reload').show()
+    clearInterval(intervalId)  
+};
 
-    
+$(document).ready(function () {
+
+    intervalId = setInterval(function () {
+        time--
+        $('header').html(time)
+        if (time === 0) {
+            grabScore()
+        }
+    }, 1 * 1000)
+
+    $('input[type=submit]').click(function (e) {
+            e.preventDefault()
+            grabScore()
+        })
 })
 
+
 $('#reload').on('click', function () {
-    location.reload();
+    location.reload()
 })
