@@ -26,7 +26,7 @@ function grabScore() {
     }
     $('#container').empty();
     $('header').empty();
-    $('#yougot').append('Your score: '+correct)
+    $('#yougot').append(correct+'c')
     $('#reload').show()
     clearInterval(intervalId)  
 };
