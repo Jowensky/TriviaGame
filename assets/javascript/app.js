@@ -26,7 +26,7 @@ function grabScore() {
     }
     $('#container').empty();
     $('header').empty();
-    $('#yougot').append(correct)
+    $('#yougot').append('Your score: '+correct)
     $('#reload').show()
     clearInterval(intervalId)  
 };
@@ -47,7 +47,9 @@ $(document).ready(function () {
         })
 })
 
-
 $('#reload').on('click', function () {
     location.reload()
 })
+
+
+
