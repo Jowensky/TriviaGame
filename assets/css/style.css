@@ -1,9 +1,8 @@
-#reload {
-    display: none;
-}
-
-hr {
-    opacity: .2;
+#timer {
+    font-size: 30px;
+    margin-left: 30%;
+    color: rgb(52, 12, 63, .75);
+    position: absolute;
 }
 
 header {
@@ -14,48 +13,39 @@ header {
     left: 80%;
 }
 
+#container {
+    border: 3px solid rgb(22, 22, 22, .5);
+    position: fixed;
+    /* display: inline; */
+}
+.next {
+    border: 3px solid rgba(7, 7, 7, 0.5);
+}
+.next2 {
+    border: 3px solid rgba(7, 7, 7, 0.7);
+}
+
 body {
     background-image: url(../images/micro.png);
+    z-index: -1;
     background-size: cover;
     color: white;
     font-family: Lora, sans-serif;
     margin: 20px;
 }
 
-form[name=quiz] > h3 {
-    margin-top: 20px;
-    padding-bottom: 5px;
-    color: grey;
-    height: 18px;
+#question {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 25px;
 }
 
-form[name=quiz] > input {
-    padding: 8px;
-}
-
-input[type=submit] {
+.answers {
     background-color: rgb(14, 13, 13, .75);
-    color: rgb(112, 112, 16, .3);
+    color: rgba(255, 255, 255, 0.3);
     border: none;
     border-radius: 20px;
-    width: 85px;
-    margin-left: 50%;
-}
-
-#reload {
-    background-color: rgb(14, 13, 13, .75);
-    color: rgb(112, 112, 16, .3);
-    border: none;
-    border-radius: 20px;
-    width: 100px;
-    font-size: 15px;
-    margin-left: 50%;
-}
-
-#yougot {
-    position: absolute;
-    margin-left: 36%;
-    bottom: 50%;
-    font-size: 80px;
-    color: rgba(189, 58, 58, 0.75);
+    width: auto;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 3px;
 }
